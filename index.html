@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git issues</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>GitHub Issues</h1></header>
+      <main>
+        <section class="hero-section">
+          <label for="ticketInput">Issue title</label><br />
+          <input
+            type="text"
+            placeholder="Add a new issue"
+            id="ticketInput"
+          /><br />
+          <label for="ticketBody">Description</label><br />
+          <textarea
+            id="ticketBody"
+            placeholder="Add decsription here .."
+          ></textarea>
+          <button id="createButton">submit new issue</button>
+          <hr />
+        </section>
+        <section id="issues"></section>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
