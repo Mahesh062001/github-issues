@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git issues</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
@@ -11,21 +21,21 @@
       <header><h1>GitHub Issues</h1></header>
       <main>
         <section class="hero-section">
-          <label for="ticketInput">Issue title</label><br />
           <input
             type="text"
-            placeholder="Add a new issue"
+            placeholder="Add a new issue title"
             id="ticketInput"
           /><br />
-          <label for="ticketBody">Description</label><br />
+
           <textarea
             id="ticketBody"
             placeholder="Add decsription here .."
           ></textarea>
           <button id="createButton">submit new issue</button>
-          <hr />
         </section>
-        <section id="issues"></section>
+        <section id="issues">
+          <h2 class="issues-heading">Issues</h2>
+        </section>
       </main>
     </div>
   </body>
